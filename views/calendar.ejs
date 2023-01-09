@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        h1{
+            color: #BF659F;
+            text-align: center;
+        }
+        body{
+            background-color: #E1C3E6;
+        }
+        #header{
+            font-size: large;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            padding: 15px;
+            border: 1px solid white;
+            background-color: #BF659F;
+            color: white;
+        }
+        #calendar{
+            font-size: larger;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid white;
+            background-color: #BF659F;
+            color: aliceblue;
+        }
+        .button{
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid white;
+            color: white;
+        }
+        #today{
+            background-color: white;
+            color: black;
+        }
+        #footer{
+            font-size: medium;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calendar</h1>
+        <table id="header">
+            <tr>
+                <td>
+                    <%- backyear %>
+                </td>
+                <td>
+                    <%- backmonth %>
+                </td>
+                <td>
+                    <h3> <%= monthString %> <%= year%> </h3> 
+                </td>
+                <td>
+                    <%- forwardmonth %>
+                </td>
+                <td>
+                    <%- forwardyear %>
+                </td>
+            </tr>
+        </table>
+        <table id="calendar">
+            <tr>
+                <th>SU</th> <th>MO</th> <th>TU</th> <th>WE</th> <th>TH</th> 
+                <th>FR</th> <th>SA</th>
+            </tr>
+              <% for(let i = 0; i < cells.length; i++){ %>
+                <tr>
+                    <% for(let j = 0; j < 7; j++){ %>
+                        <% if(i == todayIndex[0] && j == todayIndex[1]){ %>
+                            <td class="cells" id="today"> <%= cells[i][j] %> </td>
+                        <% } else{ %>
+                            <td class="cells"> <%= cells[i][j] %> </td>
+                        <% } %>
+                    <% } %>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+
+    <p id="footer">Copyright © 2022 Shuang Lin</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
