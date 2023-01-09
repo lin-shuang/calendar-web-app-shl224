@@ -1,7 +1,7 @@
 # Homework Assignment 4 - Calendar Web App
 
 - Author: Shuang Lin
-- Email: shl224@lehigh.edu
+- Email: shuanglin3359@gmail.com
 
 ### CSE 264 – Web Systems Programming,
 
