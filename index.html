@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Web App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/shuang-lin/fonts/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header>
+        <nav>
+          <div class="logo"><b>Shuang Lin</b></div>
+          <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="menu-overlay" id="menu-overlay"></div>
+    
+          <ul class="nav-links" id="nav-links">
+            <li><a href="https://lin-shuang.github.io/#home"><b>Home</b></a></li>
+            <li><a href="https://lin-shuang.github.io/#projects"><b>Projects</b></a></li>
+            <li><a href="https://lin-shuang.github.io/src/shuang-lin/resume/Shuang_Lin_Resume.pdf" download="Shuang_Lin_Resume.pdf" target="_blank"><b>Resume</b></a></li>
+          </ul>
+        </nav>
+    </header>
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <section class="separator"></section>
+        <div class="social-icons" id="go-back">
+            <a href="https://lin-shuang.github.io/src/pages/web-games-tools.html">
+                <button id="button-back">Back</button>
+            </a>
+            <a href="https://github.com/lin-shuang/calendar-web-app-shl224" target="_blank">
+                <i class="fa fa-github" id="github-current"></i>
+            </a>
+        </div>
+
+        <div>
+            <h1>Calendar</h1>
+            <div id="center-button-container">
+                <button id="current-month-button">Today</button>
+            </div>
+
+            <table id="header">
+            <tr>
+                <td>
+                <a class="button" id="back-year">&lt;&lt;</a>
+                </td>
+                <td>
+                <a class="button" id="back-month">&lt;</a>
+                </td>
+                <td><b id="current-month-year"></b></td>
+                <td>
+                <a class="button" id="forward-month">&gt;</a>
+                </td>
+                <td>
+                <a class="button" id="forward-year">&gt;&gt;</a>
+                </td>
+            </tr>
+            </table>
+        
+            <table id="calendar">
+            <tr>
+                <th>SU</th> <th>MO</th> <th>TU</th> <th>WE</th> <th>TH</th> <th>FR</th> <th>SA</th>
+            </tr>
+            </table>
+        </div>      
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>&copy; 2023 Shuang Lin</div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/shuang__________" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shuanglin-/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/@linshuang" target="_blank">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://github.com/lin-shuang" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./src/shuang-lin/scripts/nav-links.js"></script>
+    <script src="./src/calendar/scripts/app_portfolio.js"></script>
+</body>
+</html>
